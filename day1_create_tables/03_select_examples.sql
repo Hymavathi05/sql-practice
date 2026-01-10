@@ -1,36 +1,54 @@
 
-SQL> SELECT * FROM Student;
-
-STUDENT_ID STUDENT_FI STUDENT_LA STUDENT_AGE
----------- ---------- ---------- -----------
-STUDENT_EMAIL
---------------------------------------------------
-         1 HYMAVATHI  KOTHA               21
-hyma@gmail.com
-
-         2 RIYA       SHARMA              22
-riya@gmail.com
-
-         3 RUPA       ADAPA               20
-rupa@gmail.com
+SQL> SELECT * FROM Employee;
+EID                  EFNAME               ELNAME                     ESAL EADDRESS
+-------------------- -------------------- -------------------- ---------- --------------------
+101                  HYMAVATHI            KOTHA                     60000 TANUKU
+102                  PAVANI               KOTTA                     30000 KAKINADA
+103                  UMA                  PILLI                     15000 TIRUPATHI
+104                  RUPA                 ADAPA                     18000 OOTY
+105                  SRAVANI              KOTHA                    100000 USA
 
 
-SQL> SELECT student_first_name,student_email FROM Student;
 
-STUDENT_FI STUDENT_EMAIL
----------- --------------------------------------------------
-HYMAVATHI  hyma@gmail.com
-RIYA       riya@gmail.com
-RUPA       rupa@gmail.com
+SQL> SELECT EFNAME,ESAL FROM Employee;
 
-SQL> SELECT * FROM Student WHERE student_age >20;
 
-STUDENT_ID STUDENT_FI STUDENT_LA STUDENT_AGE
----------- ---------- ---------- -----------
-STUDENT_EMAIL
---------------------------------------------------
-         1 HYMAVATHI  KOTHA               21
-hyma@gmail.com
+EFNAME                     ESAL
+-------------------- ----------
+HYMAVATHI                 60000
+PAVANI                    30000
+UMA                       15000
+RUPA                      18000
+SRAVANI                  100000
 
-         2 RIYA       SHARMA              22
-riya@gmail.com
+SQL> SELECT * FROM Employee WHERE ESAL > 30000;
+
+
+EID                  EFNAME               ELNAME                     ESAL EADDRESS
+-------------------- -------------------- -------------------- ---------- --------------------
+101                  HYMAVATHI            KOTHA                     35000 TANUKU
+105                  SRAVANI              KOTHA                    100000 USA
+
+
+SQL> SELECT * FROM Employee WHERE EADDRESS='Hyderabad';
+
+no rows selected
+
+
+SQL> SELECT * FROM Employee ORDER BY ESAL DESC;
+
+EID                  EFNAME               ELNAME                     ESAL EADDRESS
+-------------------- -------------------- -------------------- ---------- --------------------
+105                  SRAVANI              KOTHA                    100000 USA
+101                  HYMAVATHI            KOTHA                     35000 TANUKU
+102                  PAVANI               KOTTA                     30000 KAKINADA
+104                  RUPA                 ADAPA                     18000 OOTY
+103                  UMA                  PILLI                     15000 TIRUPATHI
+
+SQL> SELECT COUNT(*) FROM Employee;
+
+  COUNT(*)
+----------
+         5
+
+
