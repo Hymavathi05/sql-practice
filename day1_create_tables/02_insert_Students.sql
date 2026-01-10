@@ -1,12 +1,20 @@
 
-SQL> INSERT INTO Student VALUES(1,'HYMAVATHI','KOTHA',21,'hyma@gmail.com');
+SQL> INSERT INTO Employee VALUES('101,'HYMAVATHI','KOTHA',60000,'TANUKU');
 
 1 row created.
 
-SQL> INSERT INTO Student VALUES(2,'RIYA','SHARMA',22,'riya@gmail.com');
+SQL> INSERT INTO Student VALUES('102','PAVANI','KOTTA',30000,'KAKINADA');
 
 1 row created.
 
-SQL> INSERT INTO Student VALUES(3,'RUPA','ADAPA',20,'rupa@gmail.com');
+SQL> INSERT INTO Student VALUES('103','UMA','PILLI',15000,'TIRUPATHI');
+
+1 row created.
+
+SQL> INSERT INTO Student VALUES('104','RUPA','ADAPA',18000,'OOTY');
+
+1 row created.
+
+SQL> INSERT INTO Student VALUES('105','SRAVANI','KOTHA',100000,'USA');
 
 1 row created.
