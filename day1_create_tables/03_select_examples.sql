@@ -52,3 +52,21 @@ SQL> SELECT COUNT(*) FROM Employee;
          5
 
 
+SQL> select MAX(ESAL) AS HIGHEST_SALARY FROM Employee;
+
+HIGHEST_SALARY
+--------------
+        100000
+
+SQL> select MIN(ESAL) AS LOWEST_SALARY FROM Employee;
+
+LOWEST_SALARY
+-------------
+        15000
+
+
+SQL> select COUNT(*) AS TOTAL_EMPLOYEES FROM Employee;
+
+TOTAL_EMPLOYEES
+---------------
+              5
