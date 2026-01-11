@@ -1,0 +1,7 @@
+SQL> update Employee set EADDRESS='TANUKU' WHERE EID='102';
+
+1 row updated.
+
+SQL> update Employee set ESAL=60000 WHERE EADDRESS='TANUKU';
+
+2 rows updated.
