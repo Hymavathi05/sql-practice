@@ -1,0 +1,59 @@
+🔹 8️⃣ COUNT Queries
+
+SQL> select count(*) from Employee;
+
+  COUNT(*)
+----------
+         5
+
+SQL> select count(*) from Employee where EADDRESS='TANUKU';
+
+  COUNT(*)
+----------
+         2
+
+SQL> select count(*) from Employee where ESal > 50000;
+
+  COUNT(*)
+----------
+         2
+
+SQL> select count(*) from Employee where EADDRESS='USA';
+
+  COUNT(*)
+----------
+         1
+
+SQL> select count(*) from Employee where ESal BETWEEN 20000 AND 100000;
+
+  COUNT(*)
+----------
+         2
+
+SQL> select count(*) from Employee where ELNAME='KOTHA';
+
+  COUNT(*)
+----------
+         2
+SQL> SELECT COUNT(*) FROM Employee where EADDRESS='TANUKU';
+
+  COUNT(*)
+----------
+         2
+
+SQL> SELECT COUNT(*) from Employee where ESAL < 40000;
+
+  COUNT(*)
+----------
+         3
+
+SQL> SELECT COUNT(*) from Employee where ESAL BETWEEN 10000 AND 60000;
+
+  COUNT(*)
+----------
+         4
+SQL> SELECT COUNT(*) from Employee where EADDRESS <> 'TANUKU';
+
+  COUNT(*)
+----------
+         3
