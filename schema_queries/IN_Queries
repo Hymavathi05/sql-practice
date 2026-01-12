@@ -1,0 +1,19 @@
+🔹 6️⃣ IN Queries
+
+
+SQL> select * from Employee where ELNAME IN ('KOTHA','PILLI');
+
+EID                  EFNAME               ELNAME                     ESAL EADDRESS
+-------------------- -------------------- -------------------- ---------- --------------------
+101                  HYMAVATHI            KOTHA                     35000 TANUKU
+103                  UMA                  PILLI                     15000 TIRUPATHI
+105                  SRAVANI              KOTHA                   1100000 USA
+
+
+SQL> select * from Employee where EADDRESS IN('TANUKU','USA');
+
+EID                  EFNAME               ELNAME                     ESAL EADDRESS
+-------------------- -------------------- -------------------- ---------- --------------------
+101                  HYMAVATHI            KOTHA                     35000 TANUKU
+102                  PAVANI               KOTTA                     60000 TANUKU
+105                  SRAVANI              KOTHA                   1100000 USA
