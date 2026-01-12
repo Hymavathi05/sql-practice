@@ -1,0 +1,38 @@
+🔹 3️⃣ OR Queries
+
+
+SQL> select * from Employee where EADDRESS='TANUKU' OR ESAL > 100000;
+
+EID                  EFNAME               ELNAME                     ESAL EADDRESS
+-------------------- -------------------- -------------------- ---------- --------------------
+101                  HYMAVATHI            KOTHA                     35000 TANUKU
+102                  PAVANI               KOTTA                     60000 TANUKU
+105                  SRAVANI              KOTHA                   1100000 USA
+
+
+SQL> select * from Employee where EADDRESS='USA' OR EADDRESS='OOTY';
+
+EID                  EFNAME               ELNAME                     ESAL EADDRESS
+-------------------- -------------------- -------------------- ---------- --------------------
+104                  RUPA                 ADAPA                     18000 OOTY
+
+SQL> select * from Employee where EADDRESS='USA' OR ESAL >100000;
+
+EID                  EFNAME               ELNAME                     ESAL EADDRESS
+-------------------- -------------------- -------------------- ---------- --------------------
+105                  SRAVANI              KOTHA                   1100000 USA
+
+
+SQL> SELECT * from Employee where EFNAME='UMA' OR EFNAME='RUPA';
+
+EID                  EFNAME               ELNAME                     ESAL EADDRESS
+-------------------- -------------------- -------------------- ---------- --------------------
+103                  UMA                  PILLI                     15000 TIRUPATHI
+104                  RUPA                 ADAPA                     18000 OOTY
+
+SQL> SELECT * from Employee where EADDRESS='USA' OR ESAL > 100000;
+
+EID                  EFNAME               ELNAME                     ESAL EADDRESS
+-------------------- -------------------- -------------------- ---------- --------------------
+105                  SRAVANI              KOTHA                   1100000 USA
+
