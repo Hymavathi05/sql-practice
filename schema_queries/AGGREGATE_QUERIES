@@ -1,0 +1,25 @@
+🔹 9️⃣ Aggregate Queries (MAX, MIN, AVG, SUM)
+
+SQL> SELECT MAX(ESAL) AS Highest_Salary from Employee;
+
+HIGHEST_SALARY
+--------------
+       1100000
+
+SQL> select MIN(ESAL) AS MIN_Salary from Employee;
+
+MIN_SALARY
+----------
+     15000
+
+SQL> SELECT AVG(ESAL) AS Average_Salary from Employee;
+
+AVERAGE_SALARY
+--------------
+        245600
+
+SQL> select SUM(ESAL) AS SUM_Of_Salary from Employee;
+
+SUM_OF_SALARY
+-------------
+      1228000
