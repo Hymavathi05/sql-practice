@@ -1,0 +1,9 @@
+🔹 7️⃣ NOT / <> Queries
+
+SQL> select * from Employee where EADDRESS <> 'TANUKU';
+
+EID                  EFNAME               ELNAME                     ESAL EADDRESS
+-------------------- -------------------- -------------------- ---------- --------------------
+103                  UMA                  PILLI                     15000 TIRUPATHI
+104                  RUPA                 ADAPA                     18000 OOTY
+105                  SRAVANI              KOTHA                   1100000 USA
