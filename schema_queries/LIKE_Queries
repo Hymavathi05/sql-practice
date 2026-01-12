@@ -1,0 +1,25 @@
+🔹 5️⃣ LIKE Queries
+
+
+SQL> select * from Employee where EFNAME LIKE'S%';
+
+EID                  EFNAME               ELNAME                     ESAL EADDRESS
+-------------------- -------------------- -------------------- ---------- --------------------
+105                  SRAVANI              KOTHA                   1100000 USA
+
+
+SQL> select * from Employee where EFNAME LIKE'%A';
+
+EID                  EFNAME               ELNAME                     ESAL EADDRESS
+-------------------- -------------------- -------------------- ---------- --------------------
+103                  UMA                  PILLI                     15000 TIRUPATHI
+104                  RUPA                 ADAPA                     18000 OOTY
+
+SQL> select * from Employee where ELNAME LIKE'%A';
+
+EID                  EFNAME               ELNAME                     ESAL EADDRESS
+-------------------- -------------------- -------------------- ---------- --------------------
+101                  HYMAVATHI            KOTHA                     35000 TANUKU
+102                  PAVANI               KOTTA                     60000 TANUKU
+104                  RUPA                 ADAPA                     18000 OOTY
+105                  SRAVANI              KOTHA                   1100000 USA
