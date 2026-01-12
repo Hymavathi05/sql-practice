@@ -1,0 +1,41 @@
+🔹 4️⃣ BETWEEN Queries
+
+
+SQL> select * from Employee where ESAL BETWEEN 20000 AND 60000 ;
+
+EID                  EFNAME               ELNAME                     ESAL EADDRESS
+-------------------- -------------------- -------------------- ---------- --------------------
+101                  HYMAVATHI            KOTHA                     35000 TANUKU
+102                  PAVANI               KOTTA                     60000 TANUKU
+
+SQL> select * from Employee where ESAL BETWEEN 10000 AND 40000 ;
+
+EID                  EFNAME               ELNAME                     ESAL EADDRESS
+-------------------- -------------------- -------------------- ---------- --------------------
+101                  HYMAVATHI            KOTHA                     35000 TANUKU
+103                  UMA                  PILLI                     15000 TIRUPATHI
+104                  RUPA                 ADAPA                     18000 OOTY
+
+SQL> select * from Employee where ESAL BETWEEN 50000 AND 200000 ;
+
+EID                  EFNAME               ELNAME                     ESAL EADDRESS
+-------------------- -------------------- -------------------- ---------- --------------------
+102                  PAVANI               KOTTA                     60000 TANUKU
+
+SQL> select * from Employee where ESal BETWEEN 15000 AND 60000;
+
+EID                  EFNAME               ELNAME                     ESAL EADDRESS
+-------------------- -------------------- -------------------- ---------- --------------------
+101                  HYMAVATHI            KOTHA                     35000 TANUKU
+102                  PAVANI               KOTTA                     60000 TANUKU
+103                  UMA                  PILLI                     15000 TIRUPATHI
+104                  RUPA                 ADAPA                     18000 OOTY
+
+
+SQL> SELECT * from Employee where ESAL BETWEEN 20000 AND 100000;
+
+EID                  EFNAME               ELNAME                     ESAL EADDRESS
+-------------------- -------------------- -------------------- ---------- --------------------
+101                  HYMAVATHI            KOTHA                     35000 TANUKU
+102                  PAVANI               KOTTA                     60000 TANUKU
+
