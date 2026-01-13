@@ -1,0 +1,85 @@
+🔹GROUP BY (Aggregation Basics)
+SQL> select EADDRESS,SUM(ESAL) AS Sum_Of_Salary from Employee GROUP BY EADDRESS;
+
+EADDRESS             SUM_OF_SALARY
+-------------------- -------------
+TANUKU                       95000
+TIRUPATHI                    15000
+OOTY                         18000
+USA                        1100000
+
+SQL> select ELNAME,SUM(ESAL) AS Sum_Of_Salary from Employee GROUP BY ELNAME;
+
+ELNAME               SUM_OF_SALARY
+-------------------- -------------
+KOTHA                      1135000
+KOTTA                        60000
+PILLI                        15000
+ADAPA                        18000
+
+SQL> select EADDRESS,COUNT(*) from Employee GROUP BY EADDRESS;
+
+EADDRESS               COUNT(*)
+-------------------- ----------
+TANUKU                        2
+TIRUPATHI                     1
+OOTY                          1
+USA                           1
+
+SQL> select EADDRESS,AVG(ESAL) AS Average_Salary from Employee GROUP BY EADDRESS;
+
+EADDRESS             AVERAGE_SALARY
+-------------------- --------------
+TANUKU                        47500
+TIRUPATHI                     15000
+OOTY                          18000
+USA                         1100000
+
+SQL> select ELNAME,AVG(ESAL) AS Average_Salary from Employee GROUP BY ELNAME;
+
+ELNAME               AVERAGE_SALARY
+-------------------- --------------
+KOTHA                        567500
+KOTTA                         60000
+PILLI                         15000
+ADAPA                         18000
+
+SQL> select EADDRESS,MAX(ESAL) FROM Employee GROUP BY EADDRESS;
+
+EADDRESS              MAX(ESAL)
+-------------------- ----------
+TANUKU                    60000
+TIRUPATHI                 15000
+OOTY                      18000
+USA                     1100000
+
+SQL> select EADDRESS,MAX(ESAL) AS Highest_Salary FROM Employee GROUP BY EADDRESS;
+
+EADDRESS             HIGHEST_SALARY
+-------------------- --------------
+TANUKU                        60000
+TIRUPATHI                     15000
+OOTY                          18000
+USA                         1100000
+
+
+
+SQL> select ELNAME,COUNT(*) from Employee GROUP BY ELNAME;
+
+ELNAME                 COUNT(*)
+-------------------- ----------
+KOTHA                         2
+KOTTA                         1
+PILLI                         1
+ADAPA                         1
+
+SQL> SELECT ELNAME,SUM(ESAL) AS Total_Salary FROM Employee GROUP BY ELNAME;
+
+ELNAME               TOTAL_SALARY
+-------------------- ------------
+KOTHA                     1135000
+KOTTA                       60000
+PILLI                       15000
+ADAPA                       18000
+
+
