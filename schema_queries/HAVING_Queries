@@ -1,0 +1,45 @@
+🔹HAVING (Filtering Aggregated Data)
+
+SQL> select EADDRESS,SUM(ESAL) from Employee GROUP BY EADDRESS HAVING SUM(ESAL) > 50000;
+
+EADDRESS              SUM(ESAL)
+-------------------- ----------
+TANUKU                    95000
+USA                     1100000
+
+SQL> select EADDRESS,COUNT(*) from Employee GROUP BY EADDRESS HAVING COUNT(*) >1;
+
+EADDRESS               COUNT(*)
+-------------------- ----------
+TANUKU                        2
+
+SQL> select EADDRESS,COUNT(*) from Employee GROUP BY EADDRESS HAVING COUNT(*) >0;
+
+EADDRESS               COUNT(*)
+-------------------- ----------
+TANUKU                        2
+TIRUPATHI                     1
+OOTY                          1
+USA                           1
+
+SQL> SELECT EADDRESS,AVG(ESAL) AS Average_Salary FROM Employee GROUP BY EADDRESS HAVING AVG(ESAL)>40000;
+
+EADDRESS             AVERAGE_SALARY
+-------------------- --------------
+TANUKU                        47500
+USA                         1100000
+
+SQL> SELECT ELNAME,COUNT(*) FROM Employee GROUP BY ELNAME HAVING COUNT(*)>1;
+
+ELNAME                 COUNT(*)
+-------------------- ----------
+KOTHA                         2
+
+SQL> SELECT ELNAME,COUNT(*) FROM Employee GROUP BY ELNAME HAVING COUNT(*)>0;
+
+ELNAME                 COUNT(*)
+-------------------- ----------
+KOTHA                         2
+KOTTA                         1
+PILLI                         1
+ADAPA                         1
